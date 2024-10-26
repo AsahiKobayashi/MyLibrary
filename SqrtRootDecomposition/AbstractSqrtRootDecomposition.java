@@ -2,8 +2,8 @@
  * 
  *  AbstractSqrtRootDecomposition
  * 
- *  update   : O(ãN)
- *  query    : O(ãN)
+ *  update   : O(âˆšN)
+ *  query    : O(âˆšN)
  * 
  *  @author Asahi Kobayashi
  *  
