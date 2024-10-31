@@ -1,0 +1,10 @@
+単位元と二項演算がセットで使いたいとき使ってね。
+
+Monoid<T> monoid = new Monoid<>() {
+  @Override 
+  public T e() { return XXX; } 
+  @Override
+  public T op(T a , T b) {return op(a , b); }
+}
+
+みたいな感じで宣言すればいい
