@@ -9,6 +9,6 @@
 > openjdk version "16.0.1"
 
 # データ構造の説明
-> Monoid <br>
-> 二項演算と単位元を実装するインターフェイスです。
-> 詳しい内容はは以下のURLを参考にしてください[モノイドについて](https://zenn.dev/santamn/articles/81f4bf9a4cb139)
+> Monoid<br>
+> 二項演算と単位元を実装するインターフェイスです<br>
+> 詳しい内容はは以下のURLを参考にしてください<br>[モノイドについて](https://zenn.dev/santamn/articles/81f4bf9a4cb139)
