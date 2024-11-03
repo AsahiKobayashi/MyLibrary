@@ -20,4 +20,4 @@
 >
 ># SqrtRootDecomposition
 > 大きさNのデータを√N個づつの√N個のブロックに分割することでデータ中の任意の範囲の演算をO(√N)で取得します (dynamic)<br>
-> 詳しい内容は以下のURLを参考にしてください<br[平方分割についての説明](https://www.slideshare.net/slideshow/ss-3578491/3578491)
+> 詳しい内容は以下のURLを参考にしてください<br>[平方分割についての説明](https://www.slideshare.net/slideshow/ss-3578491/3578491)
