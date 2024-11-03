@@ -7,3 +7,5 @@ Java
 
 ## 動作環境
 openjdk version "16.0.1"
+
+#　データ構造の説明
