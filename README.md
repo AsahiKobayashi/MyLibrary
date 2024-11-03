@@ -17,3 +17,7 @@
 ># SparseTable
 > データ中の任意の範囲のMinやMaxなど冪等性を満たす演算の結果をO(1)で取得します (static)<br>
 > 詳しい内容は以下のURLを参考にしてください<br>[SparseTableについての説明](https://qiita.com/recuraki/items/0fcbc9e2abbc4fae5f62)
+>
+># SqrtRootDecomposition
+> 大きさNのデータを√N個づつの√N個のブロックに分割することでデータ中の任意の範囲の演算をO(√N)で取得します (dynamic)<br>
+> 詳しい内容は以下のURLを参考にしてください<br[平方分割についての説明](https://www.slideshare.net/slideshow/ss-3578491/3578491)
