@@ -63,4 +63,22 @@ class ArraysUtil {
         }
     }
 
+    public static final <T extends Number> long sum(T ... obj) {
+        long sum = 0 ;
+        for(T element : obj) sum += element.longValue();
+        return sum ;
+    }
+
+    public static final <T extends Number> long min(T ... obj) {
+        long min = Long.MAX_VALUE;
+        for(T element : obj) min = Math.min(min,element.longValue());
+        return min;
+    }
+
+    public static final <T extends Number> long max(T ... obj) {
+        long max = Long.MIN_VALUE;
+        for(T element : obj) max = Math.max(max,element.longValue());
+        return max;
+    }
+
 }
