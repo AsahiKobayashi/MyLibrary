@@ -3,6 +3,7 @@ private static final long MASK0 = (1L << 30) - 1;
 private static final long MASK1 = (1L << 31) - 1;
 private static long[] pow;
 
+// 長さNのハッシュ値を計算（インスタンス化する前に呼び出す）
 public static long genHash(int N) {
     Random rnd = new Random();
     LongBinaryOperator gcd = (a, b) -> {
