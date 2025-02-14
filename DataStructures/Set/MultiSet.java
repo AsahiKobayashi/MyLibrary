@@ -1,7 +1,7 @@
 class MultiSet<E> {
     
-    private long size;
-    private Map<E,Long> map;
+    protected long size;
+    protected Map<E,Long> map;
     
     MultiSet() {
         this(new HashMap<>());
