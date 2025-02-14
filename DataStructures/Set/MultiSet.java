@@ -1,6 +1,6 @@
 class MultiSet<E> {
     
-    private int size;
+    private long size;
     private Map<E,Long> map;
     
     MultiSet() {
