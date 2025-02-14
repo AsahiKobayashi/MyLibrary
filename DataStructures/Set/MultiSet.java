@@ -12,18 +12,6 @@ class MultiSet<E> {
         this.size = 0 ;
     }
     
-    MultiSet(Collection<? extends E> collection) {
-        for(Object e : (Collection<? extends E>) collection) {
-            add((E) e , 1l);
-        }
-    }
-    
-    MultiSet(E [] array) {
-        for(Object e : (E []) array) {
-            add((E) e , 1l);
-        }
-    }
-    
     public long size(boolean u) {
         return u ? (long) this.map.size() : this.size ;
     }
