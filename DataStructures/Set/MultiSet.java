@@ -1,0 +1,58 @@
+class MultiSet<E> {
+    
+    private int size;
+    private Map<E,Long> map;
+    
+    MultiSet() {
+        this(new HashMap<>());
+    }
+    
+    MultiSet(Map<E,Long> map) {
+        this.map = map;
+        this.size = 0 ;
+    }
+    
+    MultiSet(Collection<? extends E> collection) {
+        for(Object e : (Collection<? extends E>) collection) {
+            add((E) e , 1l);
+        }
+    }
+    
+    MultiSet(E [] array) {
+        for(Object e : (E []) array) {
+            add((E) e , 1l);
+        }
+    }
+    
+    public long size(boolean u) {
+        return u ? (long) this.map.size() : this.size ;
+    }
+    
+    public long size(E e) {
+        return this.map.get(e);
+    }
+    
+    public void add(E e) {
+        add(e , 1l);
+    }
+    
+    public void add(E e , long amount) {
+        this.map.put(e , this.map.getOrDefault(e , 0l) + amount);
+        size += amount;
+        if(this.map.get(e) == 0l) this.map.remove(e);
+    }
+    
+    public void remove(E e) {
+        add(e , -1l);
+    }
+    
+    public void remove(E e , long amount) {
+        add(e , amount);
+    }
+    
+    @Override
+    public String toString() {
+        return this.map.toString();
+    }
+    
+}
